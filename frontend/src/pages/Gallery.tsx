@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React from "react";
+// import React from "react";
 import Navbar from "../components/Navbar";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
