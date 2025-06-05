@@ -76,7 +76,7 @@ const Landing = () => {
         <Navbar />
         {/* Hero Content */}
         <div className="relative z-10 flex flex-1 flex-col items-center lg:items-start justify-end text-left pb-1 lg:pb-8 px-2 lg:px-12 pt-32 lg:pt-0">
-          <h1 className="text-casa-orange text-2xl lg:text-3xl font-bold drop-shadow-lg mb-4">Tranquil Escape in La Ventana</h1>
+          <h1 className="text-casa-orange text-2xl lg:text-3xl font-extrabold drop-shadow-lg mb-4">Tranquil Escape in La Ventana</h1>
           <p className="text-casa-yellow text-sm lg:text-md font-light drop-shadow mb-8 max-w-2xl">Perched above the Sea of Cortez, Casa Linda offers a peaceful escape with panoramic ocean views and Baja's famous breeze. Whether you're here to relax, explore, or ride the wind, this home brings comfort, style, and soul.</p>
           <div className="hidden lg:flex lg:justify-start w-full">
             <Link to="/gallery" className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition border-2 border-casa-yellow text-center">Gallery</Link>

@@ -18,14 +18,16 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-2 lg:px-12 py-1 bg-transparent">
+      <nav className="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-2 lg:px-12 py-1 bg-transparent/1">
         {/* Logo */}
         <div className="flex items-center select-none">
-          <img
-            src="/images/casalinda-logo1.png"
-            alt="Casa Linda Logo"
-            className="h-36 w-auto object-contain drop-shadow"
-          />
+          <Link to="/">
+            <img
+              src="/images/casalinda-logo1.png"
+              alt="Casa Linda Logo"
+              className="h-36 w-auto object-contain drop-shadow"
+            />
+          </Link>
         </div>
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -49,7 +51,7 @@ const Navbar = () => {
         </div>
         {/* Hamburger Icon for Mobile */}
         <button
-          className="lg:hidden flex flex-col justify-center items-center z-40"
+          className="lg:hidden flex flex-col justify-center items-center z-40 pr-4 mt-0 mb-7"
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
         >

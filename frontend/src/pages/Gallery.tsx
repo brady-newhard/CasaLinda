@@ -74,7 +74,7 @@ const Gallery = () => {
       <div className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-12 relative w-full" style={{ backgroundImage: "url('/images/Casa Linda - 76A.png')" }}>
         <div className="absolute inset-0 bg-black/40 z-0"></div>
         <div className="relative z-10 w-full px-2 lg:px-12 flex flex-col items-center">
-          <h2 className="text-casa-orange text-3xl lg:text-4xl font-bold mb-8 text-center">Gallery</h2>
+          <h2 className="text-casa-orange text-3xl lg:text-4xl font-extrabold mb-8 text-center">Gallery</h2>
           {/* Desktop: grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-full">
             {galleryImages.map((src, idx) => (

@@ -7,10 +7,9 @@ const About = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-16" style={{ backgroundImage: "url('/images/gallery/Casa Linda - 73A.JPG')" }}>
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-casa-orange text-4xl font-bold mb-8 text-center">About Casa Linda</h1>
+            <h1 className="text-casa-orange text-4xl font-extrabold mb-8 text-center">About Casa Linda</h1>
             
             <div className="bg-gray-100/30 p-8 rounded-lg shadow-lg">
               <p className="text-casa-yellow text-lg leading-relaxed mb-6">
@@ -27,21 +26,23 @@ const About = () => {
             {/* Features Grid */}
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
-                <h2 className="text-casa-orange text-2xl font-bold mb-4">Accommodations</h2>
+                <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Accommodations</h2>
                 <ul className="text-casa-yellow space-y-2">
                   <li>• Three cozy bedrooms with queen-sized beds</li>
                   <li>• Spacious closets for all your belongings</li>
                   <li>• Three full bathrooms</li>
                   <li>• Additional half bath for guests</li>
+                  <li>• Shaded Rooftop terrace</li>
                 </ul>
               </div>
 
               <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
-                <h2 className="text-casa-orange text-2xl font-bold mb-4">Amenities</h2>
+                <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Amenities</h2>
                 <ul className="text-casa-yellow space-y-2">
+                  <li>• Heated pool</li>
                   <li>• Fully-equipped kitchen</li>
                   <li>• High-speed WiFi</li>
-                  <li>• Hot showers</li>
+                  <li>• A/C in every room</li>
                   <li>• Panoramic views</li>
                 </ul>
               </div>

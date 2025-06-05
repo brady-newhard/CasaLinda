@@ -29,10 +29,9 @@ const Contact = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-16" style={{ backgroundImage: "url('/images/gallery/Casa Linda - 73A.JPG')" }}>
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-casa-orange text-4xl font-bold mb-4 text-center">Get In Touch</h1>
+            <h1 className="text-casa-orange text-4xl font-extrabold mb-4 text-center">Get In Touch</h1>
             <p className="text-casa-yellow text-lg mb-8 text-center">
               We'd love to hear from you — whether you're ready to book or just have a few questions.
             </p>
@@ -106,17 +105,17 @@ const Contact = () => {
               {/* Contact Information */}
               <div className="space-y-6">
                 <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
-                  <h2 className="text-casa-orange text-2xl font-bold mb-4">Direct Contact</h2>
+                  <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Direct Contact</h2>
                   <div className="space-y-4">
                     <p className="text-casa-yellow">
                       <span className="font-semibold">Fernanda Ochoa:</span>{' '}
-                      <a href="tel:+526121703929" className="hover:text-casa-orange transition">
+                      <a href="tel:+526121703929" className="hover:text-casa-orange font-bold transition">
                         +52 612 170 3929
                       </a>
                     </p>
                     <p className="text-casa-yellow">
                       <span className="font-semibold">Email:</span>{' '}
-                      <a href="mailto:info@landa.mx" className="hover:text-casa-orange transition">
+                      <a href="mailto:info@landa.mx" className="hover:text-casa-orange font-bold transition">
                         info@landa.mx
                       </a>
                     </p>
@@ -125,7 +124,7 @@ const Contact = () => {
 
                 {/* Map */}
                 <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
-                  <h2 className="text-casa-orange text-2xl font-bold mb-4">Location</h2>
+                  <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Location</h2>
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe
                       src="https://www.google.com/maps?q=24.039933,-109.987740&z=15&output=embed"
