@@ -70,7 +70,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar showGalleryLink />
-      <section id="gallery" className="w-full py-12 px-2 md:px-12 bg-casa-yellow flex flex-col items-center min-h-screen">
+      <section id="gallery" className="w-full py-12 px-2 md:px-12 bg-blue-300 flex flex-col items-center min-h-screen pt-32">
         <h2 className="text-casa-orange text-3xl md:text-4xl font-bold mb-8 text-center">Gallery</h2>
         {/* Mobile: keen-slider carousel */}
         <div className="block md:hidden w-full max-w-lg mx-auto">

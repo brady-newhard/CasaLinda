@@ -74,7 +74,7 @@ const Landing = () => {
         {/* Navbar */}
         <Navbar />
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-1 flex-col items-center md:items-start justify-center text-left pt-64 pb-4 px-2 md:px-12">
+        <div className="relative z-10 flex flex-1 flex-col items-center md:items-start justify-end text-left pb-1 md:pb-8 px-2 md:px-12 pt-32 md:pt-0">
           <h1 className="text-casa-orange text-2xl md:text-3xl font-bold drop-shadow-lg mb-4">Tranquil Escape in La Ventana</h1>
           <p className="text-casa-yellow text-sm md:text-md font-light drop-shadow mb-8 max-w-2xl">Perched above the Sea of Cortez, Casa Linda offers a peaceful escape with panoramic ocean views and Baja's famous breeze. Whether you're here to relax, explore, or ride the wind, this home brings comfort, style, and soul.</p>
           <div className="hidden md:flex md:justify-start w-full">
@@ -83,7 +83,7 @@ const Landing = () => {
         </div>
       </div>
       {/* Mobile: keen-slider carousel below hero */}
-      <div className="block md:hidden w-full max-w-lg mx-auto mt-8">
+      <div className="block md:hidden w-full max-w-lg mx-auto mt-0 bg-casa-green p-4 rounded-lg">
         <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
           {galleryImages.map((src, idx) => (
             <div className="keen-slider__slide flex justify-center items-center" key={src}>

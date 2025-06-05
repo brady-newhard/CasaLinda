@@ -70,14 +70,6 @@ const Navbar = () => {
           >
             &times;
           </button>
-          {/* Logo in menu */}
-          <div className="flex items-center px-6 pt-10 pb-6">
-            <img
-              src="/images/casalinda-logo1.png"
-              alt="Casa Linda Logo"
-              className="h-36 w-auto object-contain drop-shadow"
-            />
-          </div>
           {/* Nav links */}
           <div className="flex flex-col space-y-6 px-8 mt-8">
             {navLinks.map((link) => (
