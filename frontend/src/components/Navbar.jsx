@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "About Us", href: "#" },
   { name: "Rooms & Rates", href: "#" },
   { name: "Activities", href: "#" },
   { name: "Contact", href: "#" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 const Navbar = () => {
@@ -26,13 +28,13 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-casa-yellow text-base font-medium hover:text-casa-orange transition"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <a
             href="#"
@@ -78,14 +80,14 @@ const Navbar = () => {
           {/* Nav links */}
           <div className="flex flex-col space-y-6 px-8 mt-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-casa-yellow text-xl font-semibold hover:text-casa-orange transition"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <a
               href="#"

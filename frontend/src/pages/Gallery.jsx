@@ -1,7 +1,9 @@
 // @ts-nocheck
 import React from "react";
+import Navbar from "../components/Navbar";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { Link } from "react-router-dom";
 
 // Use your actual gallery image filenames here
 const galleryImages = [
@@ -52,7 +54,7 @@ const galleryImages = [
     "/images/gallery/Casa Linda - 73A.JPG",
     "/images/gallery/Casa Linda - 74A.JPG",
     "/images/gallery/Casa Linda - 75A.JPG",
-  ];
+];
 
 const Gallery = () => {
   const [sliderRef] = useKeenSlider({
@@ -66,27 +68,34 @@ const Gallery = () => {
   });
 
   return (
-    <section id="gallery" className="w-full py-12 px-2 md:px-12 bg-casa-yellow flex flex-col items-center min-h-screen">
-      <h2 className="text-casa-orange text-3xl md:text-4xl font-bold mb-8 text-center">Gallery</h2>
-      {/* Mobile: keen-slider carousel */}
-      <div className="block md:hidden w-full max-w-lg mx-auto">
-        <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
+    <>
+      <Navbar showGalleryLink />
+      <section id="gallery" className="w-full py-12 px-2 md:px-12 bg-casa-yellow flex flex-col items-center min-h-screen">
+        <h2 className="text-casa-orange text-3xl md:text-4xl font-bold mb-8 text-center">Gallery</h2>
+        {/* Mobile: keen-slider carousel */}
+        <div className="block md:hidden w-full max-w-lg mx-auto">
+          <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
+            {galleryImages.map((src, idx) => (
+              <div className="keen-slider__slide flex justify-center items-center" key={src}>
+                <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover rounded-lg border-4 border-casa-yellow shadow-lg" />
+              </div>
+            ))}
+          </div>
+          {/* Book Now button below images on mobile */}
+          <div className="flex justify-center mt-8">
+            <a href="#" className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition border-2 border-casa-yellow text-center">Book Now</a>
+          </div>
+        </div>
+        {/* Desktop: grid */}
+        <div className="hidden md:grid grid-cols-3 gap-6 w-full max-w-5xl">
           {galleryImages.map((src, idx) => (
-            <div className="keen-slider__slide flex justify-center items-center" key={src}>
-              <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover rounded-lg border-4 border-casa-yellow shadow-lg" />
+            <div key={src} className="rounded-lg overflow-hidden border-4 border-casa-yellow shadow-lg">
+              <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover" />
             </div>
           ))}
         </div>
-      </div>
-      {/* Desktop: grid */}
-      <div className="hidden md:grid grid-cols-3 gap-6 w-full max-w-5xl">
-        {galleryImages.map((src, idx) => (
-          <div key={src} className="rounded-lg overflow-hidden border-4 border-casa-yellow shadow-lg">
-            <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover" />
-          </div>
-        ))}
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
