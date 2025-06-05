@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "#" },
-  { name: "Rooms & Rates", href: "#" },
-  { name: "Activities", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "/about" },
   { name: "Gallery", href: "/gallery" },
+  // { name: "Rooms & Rates", href: "#" },
+  { name: "Activities", href: "#" },
+  { name: "Contact", href: "/contact" },
+  
 ];
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-2 md:px-12 py-1 bg-transparent">
+      <nav className="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-2 lg:px-12 py-1 bg-transparent">
         {/* Logo */}
         <div className="flex items-center select-none">
           <img
@@ -27,7 +28,7 @@ const Navbar = () => {
           />
         </div>
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -38,15 +39,17 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="#"
+            href="https://www.airbnb.com/rooms/1397121088517170062?location=La%20Ventana%2C%20B.C.S.%2C%20Mexico&search_mode=regular_search&adults=1&check_in=2025-06-05&check_out=2025-06-10&children=0&infants=0&pets=0&source_impression_id=p3_1749141227_P3W4qTsBF554fnqo&previous_page_section_name=1001&federated_search_id=26d20163-675f-40f1-b9f9-57e2e883839b"
             className="ml-4 px-5 py-2 border-2 border-casa-yellow bg-casa-green text-casa-yellow rounded hover:bg-casa-yellow hover:text-casa-green transition font-semibold shadow"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Book Now
           </a>
         </div>
         {/* Hamburger Icon for Mobile */}
         <button
-          className="md:hidden flex flex-col justify-center items-center z-40"
+          className="lg:hidden flex flex-col justify-center items-center z-40"
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
         >
@@ -83,7 +86,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="#"
+              href="https://www.airbnb.com/rooms/1397121088517170062?location=La%20Ventana%2C%20B.C.S.%2C%20Mexico&search_mode=regular_search&adults=1&check_in=2025-06-05&check_out=2025-06-10&children=0&infants=0&pets=0&source_impression_id=p3_1749141227_P3W4qTsBF554fnqo&previous_page_section_name=1001&federated_search_id=26d20163-675f-40f1-b9f9-57e2e883839b"
               className="mt-4 px-5 py-2 border-2 border-casa-yellow bg-casa-green text-casa-yellow rounded hover:bg-casa-yellow hover:text-casa-green transition font-semibold shadow text-center"
               onClick={() => setMenuOpen(false)}
             >
