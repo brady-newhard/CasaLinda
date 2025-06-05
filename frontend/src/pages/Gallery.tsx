@@ -71,38 +71,28 @@ const Gallery = () => {
   return (
     <>
       <Navbar showGalleryLink />
-      <section id="gallery" className="w-full py-12 px-2 lg:px-12 flex flex-col items-center min-h-screen pt-32 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/gallery/Casa Linda - 73A.JPG')" }}>
+      <section id="gallery" className="w-full min-h-screen py-12 px-2 lg:px-12 flex flex-col items-center pt-32 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/gallery/Casa Linda - 73A.JPG')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="absolute inset-0 bg-black/40 z-0"></div>
         <div className="relative z-10 w-full">
           <h2 className="text-casa-orange text-3xl lg:text-4xl font-bold mb-8 text-center">Gallery</h2>
-          {/* Mobile: keen-slider carousel */}
-          <div className="block lg:hidden w-full max-w-lg mx-auto">
-            <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
-              {galleryImages.map((src, idx) => (
-                <div className="keen-slider__slide flex justify-center items-center" key={src}>
-                  <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover rounded-lg border-4 border-casa-yellow shadow-lg" />
-                </div>
-              ))}
-            </div>
-            {/* Book Now button below images on mobile */}
-            <div className="flex justify-center mt-8">
-              <a 
-                href="https://www.airbnb.com/rooms/1397121088517170062?location=La%20Ventana%2C%20B.C.S.%2C%20Mexico&search_mode=regular_search&adults=1&check_in=2025-06-05&check_out=2025-06-10&children=0&infants=0&pets=0&source_impression_id=p3_1749141227_P3W4qTsBF554fnqo&previous_page_section_name=1001&federated_search_id=26d20163-675f-40f1-b9f9-57e2e883839b"
-                className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition border-2 border-casa-yellow text-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book Now
-              </a>
-            </div>
-          </div>
           {/* Desktop: grid */}
-          <div className="hidden lg:grid grid-cols-3 gap-6 w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-full">
             {galleryImages.map((src, idx) => (
               <div key={src} className="rounded-lg overflow-hidden border-4 border-casa-yellow shadow-lg">
                 <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover" />
               </div>
             ))}
+          </div>
+          {/* Book Now button below grid on all screen sizes */}
+          <div className="flex justify-center mt-8">
+            <a 
+              href="https://www.airbnb.com/rooms/1397121088517170062?location=La%20Ventana%2C%20B.C.S.%2C%20Mexico&search_mode=regular_search&adults=1&check_in=2025-06-05&check_out=2025-06-10&children=0&infants=0&pets=0&source_impression_id=p3_1749141227_P3W4qTsBF554fnqo&previous_page_section_name=1001&federated_search_id=26d20163-675f-40f1-b9f9-57e2e883839b"
+              className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition border-2 border-casa-yellow text-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Now
+            </a>
           </div>
         </div>
       </section>

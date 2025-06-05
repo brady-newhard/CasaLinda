@@ -110,14 +110,14 @@ const Contact = () => {
                   <div className="space-y-4">
                     <p className="text-casa-yellow">
                       <span className="font-semibold">Fernanda Ochoa:</span>{' '}
-                      <a href="tel:+526121703829" className="hover:text-casa-orange transition">
-                        +52 612 170 3829
+                      <a href="tel:+526121703929" className="hover:text-casa-orange transition">
+                        +52 612 170 3929
                       </a>
                     </p>
                     <p className="text-casa-yellow">
                       <span className="font-semibold">Email:</span>{' '}
-                      <a href="mailto:brady.russell@gmail.com" className="hover:text-casa-orange transition">
-                        brady.russell@gmail.com
+                      <a href="mailto:info@landa.mx" className="hover:text-casa-orange transition">
+                        info@landa.mx
                       </a>
                     </p>
                   </div>
