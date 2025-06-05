@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Slide-in menu */}
         <div
           className={`relative w-4/5 max-w-xs h-full bg-cover bg-center shadow-xl transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} pointer-events-auto`}
-          style={{ backgroundImage: "url('/images/Casa Linda - 63A.JPG')" }}
+          style={{ backgroundImage: "url('/images/Casa Linda - 25A.JPG')" }}
         >
           {/* Close button */}
           <button

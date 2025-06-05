@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import Footer from "../components/Footer";
 
 const galleryImages = [
   "/images/gallery/Casa Linda - 1A.JPG",
@@ -83,7 +84,7 @@ const Landing = () => {
         </div>
       </div>
       {/* Mobile: keen-slider carousel below hero */}
-      <div className="block md:hidden w-full max-w-lg mx-auto mt-0 bg-casa-green p-4 rounded-lg">
+      <div className="block md:hidden w-full max-w-lg mx-auto mt-0 bg-casa-green p-4 ">
         <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
           {galleryImages.map((src, idx) => (
             <div className="keen-slider__slide flex justify-center items-center" key={src}>
@@ -92,6 +93,7 @@ const Landing = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

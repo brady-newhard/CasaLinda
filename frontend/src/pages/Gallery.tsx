@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 // Use your actual gallery image filenames here
 const galleryImages = [
@@ -95,6 +96,7 @@ const Gallery = () => {
           ))}
         </div>
       </section>
+      <Footer />
     </>
   );
 };
