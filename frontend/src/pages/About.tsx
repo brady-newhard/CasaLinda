@@ -11,7 +11,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-casa-orange text-4xl font-extrabold mb-8 text-center">About Casa Linda</h1>
             
-            <div className="bg-gray-100/30 p-8 rounded-lg shadow-lg">
+            <div className="bg-transparent/20 p-8 rounded-lg shadow-lg">
               <p className="text-casa-yellow text-lg leading-relaxed mb-6">
                 Casa Linda offers the perfect blend of comfort and charm in the heart of La Ventana. This cozy three-bedroom retreat features queen-sized beds, spacious closets, and three full bathrooms — plus a convenient half bath for guests.
               </p>
@@ -25,7 +25,7 @@ const About = () => {
 
             {/* Features Grid */}
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
+              <div className="bg-transparent/20 p-6 rounded-lg shadow-lg">
                 <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Accommodations</h2>
                 <ul className="text-casa-yellow space-y-2">
                   <li>• Three cozy bedrooms with queen-sized beds</li>
@@ -36,7 +36,7 @@ const About = () => {
                 </ul>
               </div>
 
-              <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
+              <div className="bg-transparent/20 p-6 rounded-lg shadow-lg">
                 <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Amenities</h2>
                 <ul className="text-casa-yellow space-y-2">
                   <li>• Heated pool</li>

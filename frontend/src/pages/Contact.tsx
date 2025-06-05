@@ -38,7 +38,7 @@ const Contact = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Contact Form */}
-              <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
+              <div className="bg-transparent/20 p-6 rounded-lg shadow-lg">
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-casa-yellow font-semibold mb-2">Name</label>
@@ -104,7 +104,7 @@ const Contact = () => {
 
               {/* Contact Information */}
               <div className="space-y-6">
-                <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
+                <div className="bg-transparent/20 p-6 rounded-lg shadow-lg">
                   <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Direct Contact</h2>
                   <div className="space-y-4">
                     <p className="text-casa-yellow">
@@ -123,7 +123,7 @@ const Contact = () => {
                 </div>
 
                 {/* Map */}
-                <div className="bg-gray-100/30 p-6 rounded-lg shadow-lg">
+                <div className="bg-transparent/20 p-6 rounded-lg shadow-lg">
                   <h2 className="text-casa-orange text-2xl font-extrabold mb-4">Location</h2>
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe
