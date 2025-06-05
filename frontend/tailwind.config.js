@@ -40,6 +40,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        casa: {
+          orange: "#D18A3A",
+          green: "#A3A15C",
+          yellow: "#F6E7A1",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -6,14 +6,17 @@ const Landing = () => {
   return (
     <div className="relative min-h-screen w-full flex flex-col bg-cover bg-center" style={{ backgroundImage: "url('/images/Casa Linda - 60A.JPG')" }}>
       {/* Overlay for darkening the image for text readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/40 z-0" />
       {/* Navbar */}
       <Navbar />
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center text-left pt-64 pb-16 px-4">
-        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg mb-4">Casa Linda</h1>
-        <p className="text-white text-lg md:text-xl font-light drop-shadow mb-8 max-w-2xl">Relax and enjoy your stay in La Ventana at the beautiful Casa Linda. Experience comfort, style, and breathtaking views.</p>
-        <a href="#" className="inline-block px-8 py-3 bg-white/80 text-blue-900 font-semibold rounded shadow hover:bg-white transition backdrop-blur border border-white/60">Book Now</a>
+      <div className="relative z-10 flex flex-1 flex-col items-center md:items-start justify-center text-left pt-64 pb-4 px-2 md:px-12">
+        <h1 className="text-casa-orange text-2xl md:text-3xl font-bold drop-shadow-lg mb-4">Tranquil Escape in La Ventana</h1>
+        <p className="text-casa-yellow text-sm md:text-md font-light drop-shadow mb-8 max-w-2xl">Perched above the Sea of Cortez, Casa Linda offers a peaceful escape with panoramic ocean views and Baja's famous breeze. Whether you're here to relax, explore, or ride the wind, this home brings comfort, style, and soul.</p>
+        <div className="flex md:justify-start justify-center w-full">
+          <a href="#gallery" className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition border-2 border-casa-yellow text-center">Gallery</a>
+        </div>
+        {/* <a href="#" className="inline-block px-8 py-3 bg-casa-green text-casa-yellow font-semibold rounded shadow hover:bg-casa-yellow hover:text-casa-green transition backdrop-blur border-2 border-casa-yellow">Book Now</a> */}
       </div>
       {/* Booking/Search Bar (commented out for now) */}
       {false && (

@@ -29,14 +29,14 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-white text-base font-medium hover:text-blue-100 transition"
+              className="text-casa-yellow text-base font-medium hover:text-casa-orange transition"
             >
               {link.name}
             </a>
           ))}
           <a
             href="#"
-            className="ml-4 px-5 py-2 border border-white text-white rounded hover:bg-white hover:text-blue-700 transition font-semibold shadow"
+            className="ml-4 px-5 py-2 border-2 border-casa-yellow bg-casa-green text-casa-yellow rounded hover:bg-casa-yellow hover:text-casa-green transition font-semibold shadow"
           >
             Book Now
           </a>
@@ -47,9 +47,9 @@ const Navbar = () => {
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
         >
-          <span className="block w-7 h-1 bg-white rounded mb-1"></span>
-          <span className="block w-7 h-1 bg-white rounded mb-1"></span>
-          <span className="block w-7 h-1 bg-white rounded"></span>
+          <span className="block w-7 h-1 bg-casa-yellow rounded mb-1"></span>
+          <span className="block w-7 h-1 bg-casa-yellow rounded mb-1"></span>
+          <span className="block w-7 h-1 bg-casa-yellow rounded"></span>
         </button>
       </nav>
       {/* Mobile Menu Overlay */}
@@ -61,7 +61,7 @@ const Navbar = () => {
         >
           {/* Close button */}
           <button
-            className="absolute top-5 right-5 text-white text-3xl font-bold z-50"
+            className="absolute top-5 right-5 text-casa-yellow text-3xl font-bold z-50"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
@@ -70,9 +70,9 @@ const Navbar = () => {
           {/* Logo in menu */}
           <div className="flex items-center px-6 pt-10 pb-6">
             <img
-              src="/images/casalinda-logo3.png"
+              src="/images/casalinda-logo1.png"
               alt="Casa Linda Logo"
-              className="h-12 w-auto object-contain drop-shadow"
+              className="h-36 w-auto object-contain drop-shadow"
             />
           </div>
           {/* Nav links */}
@@ -81,7 +81,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white text-xl font-semibold hover:text-blue-200 transition"
+                className="text-casa-yellow text-xl font-semibold hover:text-casa-orange transition"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}
@@ -89,7 +89,7 @@ const Navbar = () => {
             ))}
             <a
               href="#"
-              className="mt-4 px-5 py-2 border border-white text-white rounded hover:bg-white hover:text-blue-700 transition font-semibold shadow text-center"
+              className="mt-4 px-5 py-2 border-2 border-casa-yellow bg-casa-green text-casa-yellow rounded hover:bg-casa-yellow hover:text-casa-green transition font-semibold shadow text-center"
               onClick={() => setMenuOpen(false)}
             >
               Book Now
