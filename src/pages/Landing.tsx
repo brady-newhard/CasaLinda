@@ -83,7 +83,7 @@ const Landing = () => {
           <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
             {galleryImages.map((src, idx) => (
               <div className="keen-slider__slide flex justify-center items-center" key={src}>
-                <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover rounded-lg border-4 border-casa-yellow shadow-lg" />
+                <img src={src} alt={`Gallery ${idx + 1}`} loading="lazy" className="w-full h-64 object-cover rounded-lg border-4 border-casa-yellow shadow-lg" />
               </div>
             ))}
           </div>
