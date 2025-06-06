@@ -72,5 +72,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Cinzel', serif;
+  }
+  html {
+    font-family: 'Cinzel', serif;
   }
 }

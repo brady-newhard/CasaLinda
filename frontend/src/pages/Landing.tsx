@@ -69,7 +69,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="relative min-h-screen w-full flex flex-col bg-cover bg-center" style={{ backgroundImage: "url('/images/Casa Linda - 60A.JPG')" }}>
+      <div className="relative min-h-screen w-full flex flex-col bg-cover bg-center font-[Cinzel]" style={{ backgroundImage: "url('/images/Casa Linda - 60A.JPG')", fontFamily: "'Cinzel', serif" }}>
         {/* Overlay for darkening the image for text readability */}
         <div className="absolute inset-0 bg-black/40 z-0" />
         {/* Navbar */}
