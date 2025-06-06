@@ -14,6 +14,7 @@ const galleryImages = [
     "/images/gallery/Casa Linda - 12A.JPG",
     "/images/gallery/Casa Linda - 13A.JPG",
     "/images/gallery/Casa Linda - 14A.JPG",
+    "/images/gallery/Casa Linda - 15A.JPG",
     "/images/gallery/Casa Linda - 18A.JPG",
     "/images/gallery/Casa Linda - 19A.JPG",
     "/images/gallery/Casa Linda - 20A.JPG",
