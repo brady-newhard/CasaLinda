@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex items-center select-none">
           <Link to="/">
             <img
-              src="/images/casalinda-logo1.png"
+              src="/images/casanewhard-logo1.png"
               alt="Casa Newhard Logo"
               className="h-36 w-auto object-contain drop-shadow"
             />
