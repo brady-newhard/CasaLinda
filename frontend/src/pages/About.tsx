@@ -9,11 +9,11 @@ const About = () => {
       <div className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-16" style={{ backgroundImage: "url('/images/gallery/Casa Linda - 73A.JPG')" }}>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-casa-orange text-4xl font-extrabold mb-8 text-center">About Casa Linda</h1>
+            <h1 className="text-casa-orange text-4xl font-extrabold mb-8 text-center">About Casa Newhard</h1>
             
             <div className="bg-transparent/20 p-8 rounded-lg shadow-lg">
               <p className="text-casa-yellow text-lg leading-relaxed mb-6">
-                Casa Linda offers the perfect blend of comfort and charm in the heart of La Ventana. This cozy three-bedroom retreat features queen-sized beds, spacious closets, and three full bathrooms — plus a convenient half bath for guests.
+                Casa Newhard offers the perfect blend of comfort and charm in the heart of La Ventana. This cozy three-bedroom retreat features queen-sized beds, spacious closets, and three full bathrooms — plus a convenient half bath for guests.
               </p>
               <p className="text-casa-yellow text-lg leading-relaxed mb-6">
                 Whether you're preparing a fresh Baja breakfast in the fully-equipped kitchen or unwinding with fast WiFi and hot showers after a day of adventure, you'll feel right at home.

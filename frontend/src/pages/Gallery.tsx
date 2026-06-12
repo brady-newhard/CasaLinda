@@ -80,7 +80,7 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 w-full">
             {galleryImages.map((src, idx) => (
               <div key={src} className="rounded-lg overflow-hidden border-4 border-casa-yellow shadow-lg">
-                <img src={src} alt={`Gallery ${idx + 1}`} className="w-full h-64 object-cover" />
+                <img src={src} alt={`Gallery ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-64 object-cover" />
               </div>
             ))}
           </div>

@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               src="/images/casalinda-logo1.png"
-              alt="Casa Linda Logo"
+              alt="Casa Newhard Logo"
               className="h-36 w-auto object-contain drop-shadow"
             />
           </Link>
