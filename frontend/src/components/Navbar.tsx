@@ -25,7 +25,7 @@ const Navbar = () => {
             <img
               src="/images/casanewhard-logo1.png"
               alt="Casa Newhard Logo"
-              className="h-36 w-auto object-contain drop-shadow"
+              className="h-16 lg:h-20 w-auto object-contain drop-shadow"
             />
           </Link>
         </div>
